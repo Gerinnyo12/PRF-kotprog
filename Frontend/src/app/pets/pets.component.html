@@ -1,0 +1,23 @@
+<div class="logout-button">
+  <button mat-raised-button (click)="logout()">Kijelentkezés</button>
+</div>
+
+<h2 class="center">Kisállatok</h2>
+<div class="flex-container">
+  <mat-card *ngFor="let pet of pets" class="example-card margin-top">
+    <mat-card-header>
+      <mat-card-title>{{pet.name}}</mat-card-title>
+    </mat-card-header>
+    <img src="{{pet.picture}}" alt="Kisallat kep" />
+    <mat-card-actions>
+      <button mat-raised-button [routerLink]="['/pets/' + pet.name]">Részletek</button>
+      <button mat-raised-button (click)="deletePet(pet.name)">Törlés</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
+
+<div class="add-button">
+  <button mat-raised-button class="max-width" [routerLink]="['/add']">Új kisállat hozzáadása</button>
+</div>
+
+<router-outlet></router-outlet>

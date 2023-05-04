@@ -1,0 +1,17 @@
+.example-card {
+    width: 700px;
+}
+
+.center {
+    margin: auto;
+}
+
+.description {
+    padding-top: 20px;
+    font-size: 20px;
+    color: yellow;
+}
+
+.space-top {
+    margin-top: 20px;
+}

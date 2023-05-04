@@ -1,0 +1,33 @@
+<div class="center-div" role="main">
+  <h2>Hozzáadás</h2>
+  <div>
+    <div class="form-group">
+      <label for="name">Név</label>
+      <input type="text" class="form-control" id="name" placeholder="Scooby" [(ngModel)]="name">
+    </div>
+    <div class="form-group">
+      <label for="specie">Állat</label>
+      <input type="text" class="form-control" id="specie" placeholder="Cica" [(ngModel)]="specie">
+    </div>
+    <div class="form-group">
+      <label for="age">Kor</label>
+      <input type="number" min="0" class="form-control" id="age" placeholder="5" [(ngModel)]="age">
+    </div>
+    <div class="form-group">
+      <label for="height">Magasság</label>
+      <input type="number" min="0" class="form-control" id="height" placeholder="50" [(ngModel)]="height">
+    </div>
+    <div class="custom-file">
+      <label class="custom-file-label" for="picture">Kép</label>
+      <input type="file" class="custom-file-input" id="picture" (change)="onFileSelected($event)">
+    </div>
+    <div class="form-group">
+      <button mat-raised-button (click)="addPet()">Hozzáadás</button>
+    </div>
+    <div class="form-group">
+      <button mat-raised-button [routerLink]="['/pets']">Vissza a kisállatokhoz</button>
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>

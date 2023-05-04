@@ -1,0 +1,45 @@
+.example-card {
+    max-width: 200px;
+    margin: 15px;
+}
+
+.description {
+    padding-top: 20px;
+    font-size: 20px;
+    color: yellow;
+}
+
+.flex-container {
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: left;
+}
+
+.center {
+    width: min-content;
+    margin: auto;
+}
+
+.add-button {
+    width: 50%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+button {
+    margin-right: 10px;
+}
+
+.margin-top {
+    margin-top: 15px;
+}
+
+.max-width {
+    width: 100%;
+}
+
+.logout-button {
+    margin-left: 50px;
+    margin-top: 15px;
+}

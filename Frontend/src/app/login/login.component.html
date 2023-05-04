@@ -1,0 +1,23 @@
+<div class="center-div" role="main">
+  <h2>Bejelentkezés</h2>
+  <div>
+    <div class="form-group">
+      <label for="username">Felhasználónév</label>
+      <input type="text" class="form-control" id="username" [(ngModel)]="username">
+    </div>
+    <div class="form-group">
+      <label for="password">Jelszó</label>
+      <input type="password" class="form-control" id="password" [(ngModel)]="password">
+    </div>
+    <div class="form-group">
+      <div class="form-group">
+        <button mat-raised-button (click)="login()">Bejelentkezés</button>
+      </div>
+      <div class="form-group">
+        <button mat-raised-button [routerLink]="['/register']">Nincs még felhasználóm</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
